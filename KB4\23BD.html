@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AutoUSA — Коли мрія стає реальною</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #0a3d62;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    header .flags {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+    header .flags img {
+      width: 30px;
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+
+    nav {
+      background-color: #1e272e;
+      overflow: hidden;
+    }
+    nav a {
+      float: left;
+      display: block;
+      color: #fff;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background-color: #485460;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .hero {
+      background: url('https://ff24.com.ua/public/blog/wp-content/uploads/2021/12/avto-iz-ssha-pljusy-i-minusy.jpg') center/cover no-repeat;
+      height: 300px;
+      border-radius: 8px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 2em;
+      font-weight: bold;
+    }
+
+    section {
+      background-color: #fff;
+      margin-top: 30px;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      margin-top: 0;
+      color: #0a3d62;
+    }
+
+    .car-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      grid-gap: 20px;
+      margin-top: 20px;
+    }
+
+    .car-item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: #fafafa;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .car-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .car-item img {
+      width: 100%;
+      display: block;
+      height: 180px;
+      object-fit: cover;
+    }
+    .car-info {
+      padding: 15px;
+    }
+    .car-info h3 {
+      margin: 0 0 10px;
+      font-size: 1.2em;
+      color: #111;
+    }
+    .car-info p {
+      margin: 0 0 10px;
+    }
+    .price {
+      font-size: 1.3em;
+      color: #e74c3c;
+      font-weight: bold;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      box-sizing: border-box;
+    }
+    form button {
+      background-color: #0a3d62;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #1e90ff;
+    }
+
+    footer {
+      background-color: #0a3d62;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav a {
+        float: none;
+        width: 100%;
+      }
+      .hero {
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="flags">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Flag_of_Ukraine.svg" alt="Україна">
+      <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA">
+    </div>
+    <h1>AutoUSA</h1>
+    <p>Доставка, підбір та продаж авто з США</p>
+  </header>
+
+  <nav>
+    <a href="#home">Головна</a>
+    <a href="#cars">Автомобілі</a>
+    <a href="#services">Послуги</a>
+    <a href="#faq">FAQ</a>
+    <a href="#contact">Контакти</a>
+  </nav>
+
+  <div class="container">
+    <section id="home" class="hero">
+      <div class="overlay">Мрієш про авто з США? Ми доставимо!</div>
+    </section>
+
+    <section id="cars">
+      <h2>Автомобілі з прикладами цін</h2>
+      <div class="car-list">
+        <div class="car-item">
+          <img src="data:image/jpeg;base64,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" alt="Авто 1">
+          <div class="car-info">
+            <h3>Ford Mustang 2017</h3>
+            <p>Тип: Купе, бензин, 2.3L</p>
+            <div class="price">$23,500</div>
+          </div>
+        </div>
+        <div class="car-item">
+          <img src="https://cdn2.riastatic.com/photosnew/auto/photo/tesla_model-3__478347262f.jpg" alt="Авто 2">
+          <div class="car-info">
+            <h3>Tesla Model 3 2019</h3>
+            <p>Тип: Седан, електро</p>
+            <div class="price">$35,200</div>
+          </div>
+        </div>
+        <div class="car-item">
+          <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80" alt="Авто 3">
+          <div class="car-info">
+            <h3>Chevrolet Camaro 2018</h3>
+            <p>Тип: Купе, бензин, 3.6L</p>
+            <div class="price">$27,800</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Наші послуги</h2>
+      <ul>
+        <li>Підбір авто під ваш бюджет</li>
+        <li>Участь в аукціонах (Copart, IAAI, Manheim)</li>
+        <li>Морська доставка та митне оформлення</li>
+        <li>Ремонт, сертифікація та підготовка до реєстрації</li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>Часті запитання (FAQ)</h2>
+      <h4>Скільки триває доставка?</h4>
+      <p>Близько 4–8 тижнів, залежно від порту і маршруту.</p>
+      <h4>Які витрати окрім ціни авто?</h4>
+      <p>Транспорт, митне оформлення, ремонт/сертифікація.</p>
+      <h4>Чи можна оплатити частинами?</h4>
+      <p>Ми обговорюємо індивідуально з клієнтом.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Зв'язок з нами</h2>
+      <form>
+        <input type="text" placeholder="Ваше ім'я" required>
+        <input type="email" placeholder="Ваш email" required>
+        <textarea rows="4" placeholder="Ваше повідомлення"></textarea>
+        <button type="submit">Надіслати</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 AutoUSA — всі права захищені</p>
+  </footer>
+
+</body>
+</html>
